@@ -72,36 +72,25 @@ h2{
 }
 
 .a-i{
-    font-family: "marc-italic";
-}
-
+    font-family: "marc-italic";}
 .u-e-h{
-    font-family: "faune-bolditalic";
-}
-
+    font-family: "faune-bolditalic";}
 .c-n{
     font-family: "faune-black";
     font-size: 65px;
 }
-
 .a-i:hover{
     color: darkcyan;
-    transition-duration: 0s;
-}
-
+    transition-duration: 0s;}
 .c-n:hover{
     color: darkcyan;
-    transition-duration: 0s;
-}
-
+    transition-duration: 0s;}
 .u-e-h:hover{
     color: darkcyan;
-    transition-duration: 0s;
-}
+    transition-duration: 0s;}
 .p-k:hover{
     color: darkcyan;
-    transition-duration: 0s;
-}
+    transition-duration: 0s;}
 
 .menu2{
     color: white;
