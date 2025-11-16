@@ -1,0 +1,86 @@
+@font-face{
+    font-family: "faune";
+    src:url('woff2/Faune-Text_Regular.woff2') format('woff2');
+}
+
+body{
+    font-family: "faune", arial;
+    margin :10px 40px 20px 30px;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items:center;
+}
+
+h1{
+    font-size: 35px;
+}
+
+h2{
+    font-size: 24px;
+    margin: 10px;
+}
+
+h3{
+    font-size: 30px;
+    margin: 1px;
+}
+
+.grid{ 
+    display: grid;
+    grid-template-columns: 4fr 7fr;
+    column-gap: 60px;
+    margin-top: 20px;
+    row-gap: 20px;
+}
+
+p.date{
+    margin-top: -5px;
+    margin-bottom: 30px;
+}
+
+p.date2{
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+p.liste{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+
+p.liste2{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.gauche{
+    background: darkcyan;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+p.credit{
+    font-size: 12px;
+    text-align: center;
+}
+
+a{
+    font-size: 20px;
+    text-decoration: none;
+    background: black;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 15px;
+}
+
+a:hover{
+    background: darkcyan;
+    transition: ease 0.5s;
+}

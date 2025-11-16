@@ -1,71 +1,302 @@
-@font-face{
-    font-family: "faune";
-    src:url('woff2/Faune-Text_Regular.woff2') format('woff2');
+@font-face {
+    font-family: "marc-bold";
+    src: url(marc/Marc-Bold.otf);
+}
+@font-face {
+    font-family: "marc-italic";
+    src: url(marc/Marc-Italic.otf);
+}
+@font-face {
+    font-family: "faune-bolditalic";
+    src: url(woff2/Faune-Display_Bold_Italic.woff2);
+}
+@font-face {
+    font-family: "faune-black";
+    src: url(woff2/Faune-Display_Black.woff2);
 }
 
 body{
-    font-family: "faune", arial;
-    margin :10px 40px 20px 30px;
-}
-
-.header{
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items:center;
+    font-family: "marc-bold", arial;
+    width: 100%;
+    overflow: visible;
+    margin: 0px;
 }
 
 h1{
-    font-size: 35px;
+    text-align: center;
+    font-size: 60px;
 }
 
 h2{
-    font-size: 24px;
-    margin: 10px;
+    font-family: "faune-black";
+    color: darkcyan;
 }
 
-h3{
-    font-size: 30px;
-    margin: 1px;
+.fond{
+    width: 150px;
+    height: auto;
+    position: absolute;
+    left: 10px; /* x-coordinate */
+    top: 50px;   /* y-coordinate */
+    z-index: -1;
 }
 
-.grid{ 
+.fond2{
+    width: 200px;
+    height: auto;
+    position: absolute;
+    right: 10px; /* x-coordinate */
+    top: 125px;   /* y-coordinate */
+    z-index: -1;
+}
+
+.nom{
+    justify-content: center;
     display: grid;
-    grid-template-columns: 4fr 7fr;
-    column-gap: 60px;
-    margin-top: 20px;
-    row-gap: 20px;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 0px;
+    grid-template-rows: repeat(2, 50px);
 }
 
-p.date{
-    margin-top: -5px;
-    margin-bottom: 30px;
+.fleche{
+    width: 200px;
+    height: auto;
+    position: absolute;
+    right: 10px; /* x-coordinate */
+    top: 125px;   /* y-coordinate */
 }
 
-p.date2{
-    margin-top: -5px;
-    margin-bottom: 10px;
+.fleche:hover{
+    opacity: 0.5;
+    transition: all 0.5S;
 }
 
-p.liste{
-    margin-top: 10px;
-    margin-bottom: 50px;
-    margin-left: 20px;
+.a-i{
+    font-family: "marc-italic";
 }
 
-p.liste2{
-    margin-top: 10px;
-    margin-left: 20px;
+.u-e-h{
+    font-family: "faune-bolditalic";
 }
 
-.gauche{
-    background: darkcyan;
+.c-n{
+    font-family: "faune-black";
+    font-size: 65px;
+}
+
+.a-i:hover{
+    color: darkcyan;
+    transition-duration: 0s;
+}
+
+.c-n:hover{
+    color: darkcyan;
+    transition-duration: 0s;
+}
+
+.u-e-h:hover{
+    color: darkcyan;
+    transition-duration: 0s;
+}
+.p-k:hover{
+    color: darkcyan;
+    transition-duration: 0s;
+}
+
+.menu2{
     color: white;
-    border-radius: 25px;
-    padding: 10px 15px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    text-decoration: none;
+    font-size: 15px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 20px;
+    align-items: baseline;
+    text-align: center;
 }
 
-p.credit{
-    font-size: 15px;
+.menu2:hover{
+    background-color: darkcyan;
+    transition: color 0.5s;
+}
+
+.menu{
+    margin: -20px;
+    margin-top: 120vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    justify-content: end;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* above other content */
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.menu3{
+    margin: -20px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    justify-content: end;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* above other content */
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.intro{
+    margin: 20px;
+}
+
+.pr{
+    margin: 20px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-auto-rows: 199px;
+    justify-content: center;
+    gap: 10px;
+    row-gap: 10px;
+    }
+
+.image{
+    object-fit: cover;
+    height: 200px;
+    width: auto;
+    border-radius: 20px;
+}
+
+.item{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background: darkcyan;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: "faune-black";
+    font-size: 22px;
+    color: aliceblue;
+}
+
+.item p, .item img{
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+}
+
+.item p{
+    opacity: 0;
+}
+
+.item:hover p{
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 999;
+}
+
+.item:hover img{
+    opacity: 0.2;
+    transition: all 0.5s ease;
+}
+
+footer{
+    font-size: 12px;
+    font-family: "faune-black", arial;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    h1{
+        font-size: 110px;}
+    .c-n{
+        font-size: 115px;}
+    .nom{
+        row-gap:50px;
+    }
+    .menu{
+        font-size: 17px;}
+    .fond{
+        width: 200px;}
+    .fond2{
+        width: 250px;
+        right: 20px;
+        top: 225px;}
+    .fleche{
+        width: 250px;
+        right: 20px;
+        top: 225px;
+    }
+    .grid{
+        grid-auto-rows: 299px;
+        grid-template-columns: repeat(3, auto);}
+    .image{
+        height: 300px;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1{
+        font-size: 160px;}
+    .c-n{
+        font-size: 175px;}
+    .nom{
+        row-gap: 100px;}
+    .menu{
+        font-size: 20px;}
+    .fond{
+        width: 250px;}
+    .fond2{
+        width: 300px;
+        right: 20px;
+        top: 340px;}
+    .fleche{
+        width: 300px;
+        right: 20px;
+        top: 340px;}
+    .grid{
+        grid-auto-rows: 399px;
+        grid-template-columns: repeat(3, auto);}
+    .image{
+        height: 400px;
+    }
+}
+
+@media (min-width: 1440px) {
+    h1{
+        font-size: 265px;}
+    .c-n{
+        font-size: 290px;}
+    .nom{
+        row-gap: 200px;}
+    .menu{
+        font-size: 23px;}
+    .fond{
+        width: 400px;
+        top: 100px;}
+    .fond2{
+        width: 300px;
+        right: 20px;
+        top: 540px;}
+    .fleche{
+        width: 300px;
+        right: 20px;
+        top: 540px;}
+    .grid{
+        grid-auto-rows: 449px;
+        grid-template-columns: repeat(3, auto);}
+    .image{
+        height: 450px;
+    }
+}
+
+html{
+    scroll-behavior: smooth;
 }
