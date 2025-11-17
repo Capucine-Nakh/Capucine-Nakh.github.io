@@ -150,8 +150,8 @@ h2{
 
 .grid{
     display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-auto-rows: 199px;
+    grid-template-columns: repeat(1, auto);
+    grid-auto-rows: 449px;
     justify-content: center;
     gap: 10px;
     row-gap: 10px;
@@ -159,7 +159,7 @@ h2{
 
 .image{
     object-fit: cover;
-    height: 200px;
+    height: 450px;
     width: auto;
     border-radius: 20px;
 }
@@ -224,10 +224,10 @@ footer{
         top: 225px;
     }
     .grid{
-        grid-auto-rows: 299px;
-        grid-template-columns: repeat(3, auto);}
+        grid-auto-rows: 449px;
+        grid-template-columns: repeat(2, auto);}
     .image{
-        height: 300px;
+        height: 450px;
     }
 }
 
@@ -251,10 +251,10 @@ footer{
         right: 20px;
         top: 340px;}
     .grid{
-        grid-auto-rows: 399px;
+        grid-auto-rows: 449px;
         grid-template-columns: repeat(3, auto);}
     .image{
-        height: 400px;
+        height: 450px;
     }
 }
 
@@ -280,7 +280,7 @@ footer{
         top: 540px;}
     .grid{
         grid-auto-rows: 449px;
-        grid-template-columns: repeat(3, auto);}
+        grid-template-columns: repeat(4, auto);}
     .image{
         height: 450px;
     }
