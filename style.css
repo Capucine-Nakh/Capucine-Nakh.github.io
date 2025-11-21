@@ -150,7 +150,7 @@ h2{
     color: white;
     text-shadow: 2px 2px 10px black;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 15px;
     background-color: none;
     border-radius: 20px;
     align-items: baseline;
@@ -164,7 +164,6 @@ h2{
 }
 
 .menu{
-    /* margin: -20px; */
     margin-top: 120vh;
     display: grid;
     grid-template-columns: 1fr auto auto auto;
@@ -213,11 +212,6 @@ h2{
     justify-self: end;
 }
 
-@media (min-width:372){
-    .menu2{
-        font-size: 15px;
-    }
-}
 
 @media (min-width:768px){
     .menu2{
