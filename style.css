@@ -341,7 +341,7 @@ h2{
 .colo-bg{
     background-image: url('images/colomemo/colomemo-02.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     min-height: 10vh;
 }
 
