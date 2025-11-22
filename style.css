@@ -63,14 +63,43 @@ h1{
     /* justify-content: last baseline; */
 }
 
+.imageplus{
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 20px;
+    margin: 20px;
+    /* justify-content: last baseline; */
+}
+
+.imageplusplus{
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 20px;
+    margin: 20px;
+    /* justify-content: last baseline; */
+}
 
 @media (min-width: 1024px) {
     .imageseule{
         position: sticky;
         grid-template-columns: repeat(2, auto);
     }
+    .imageplus{
+        position: sticky;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .imageplusplus{
+        position: sticky;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
+@media (min-width: 1440px){
+        .imageplusplus{
+        position: sticky;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
 
 h2{
     font-family: "marc-bold";
@@ -309,6 +338,12 @@ h2{
     background-repeat: no-repeat;
     min-height: 10vh;
 }
+.colo-bg{
+    background-image: url('images/colomemo/colomemo-02.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 10vh;
+}
 
 .overlay {
   display: none;
@@ -383,16 +418,40 @@ h2{
         grid-template-columns: repeat(2, auto);
     }
 }
-
 @media (min-width:1024px){
     .grid-projets{
         grid-template-columns: repeat(3, auto);
     }
 }
-
 @media (min-width:1440px){
     .grid-projets{
         grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.grid-projets6{
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    /* grid-auto-rows: 449px; */
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+    }
+
+.grid-projets6 img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+
+@media (min-width:768px){
+    .grid-projets6{
+        grid-template-columns: repeat(2, auto);
+    }
+}
+@media (min-width:1024px){
+    .grid-projets6{
+        grid-template-columns: repeat(3, auto);
     }
 }
 
