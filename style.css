@@ -48,6 +48,12 @@ h1{
     padding: 0px;
 }
 
+/* @media (min-width: 913px){
+    .texteblanc{
+        font-size: 110px;
+    }
+} */
+
 .imageseule img{
     object-fit: cover;
     width:100%;
@@ -254,9 +260,6 @@ h2{
     }
 }
 
-@media (min-width:1440px){
-
-}
 
 .intro{
     margin: 20px;
@@ -332,6 +335,8 @@ h2{
     transition: all 0.5s ease;
 }
 
+
+/* BACKGROUND */
 .coll-bg{
     background-image: url('images/collection/coll-1.jpg');
     background-size: cover;
@@ -344,6 +349,13 @@ h2{
     /* background-repeat: no-repeat; */
     min-height: 10vh;
 }
+.marc-bg{
+    background-image: url('images/marc/marc-edition-02.jpg');
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    min-height: 10vh;
+}
+/* BACKGROUND */
 
 .overlay {
   display: none;
@@ -482,7 +494,6 @@ footer{
         right: 20px;
         top: 225px;
     }
-
     .image{
         height: 450px;
     }
@@ -491,9 +502,6 @@ footer{
 @media (min-width: 1024px) {
     h1{
         font-size: 160px;}
-    .texteblanc{
-        font-size: 110px;
-    }
     .c-n{
         font-size: 175px;}
     .nom{
@@ -519,9 +527,6 @@ footer{
 @media (min-width: 1440px) {
     h1{
         font-size: 250px;}
-    .texteblanc{
-        font-size: 110px;
-    }
     .c-n{
         font-size: 290px;}
     .nom{
