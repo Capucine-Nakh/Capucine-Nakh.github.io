@@ -338,7 +338,7 @@ h2{
 
 /* BACKGROUND */
 .coll-bg{
-    background-image: url('images/collection/coll-1.jpg');
+    background-image: url('images/collection/coll-01.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 10vh;
@@ -351,6 +351,36 @@ h2{
 }
 .marc-bg{
     background-image: url('images/marc/marc-edition-02.jpg');
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    min-height: 10vh;
+}
+.itineraire-bg{
+    background-image: url('images/itineraire/itineraire-01.jpg');
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    min-height: 10vh;
+}
+.coffret-bg{
+    background-image: url('images/coffret/coffret-affiche-01.jpg');
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    min-height: 10vh;
+}
+.fruit-bg{
+    background-image: url('images/pommes/pommes-02.jpg');
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    min-height: 10vh;
+}
+.broutille-bg{
+    background-image: url('images/pommes/pommes-02.jpg');
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    min-height: 10vh;
+}
+.python-bg{
+    background-image: url('images/python/python-03.jpg');
     background-size: cover;
     /* background-repeat: no-repeat; */
     min-height: 10vh;
