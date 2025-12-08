@@ -563,7 +563,7 @@ footer p{
 
 @media (min-width: 1024px) {
     h1{
-        font-size: 160px;}
+        font-size: 150px;}
     .c-n{
         font-size: 175px;}
     .nom{
@@ -587,8 +587,8 @@ footer p{
 }
 
 @media (min-width: 1440px) {
-    h1{
-        font-size: 250px;}
+    /* h1{
+        font-size: 250px;} */
     .c-n{
         font-size: 290px;}
     .nom{
