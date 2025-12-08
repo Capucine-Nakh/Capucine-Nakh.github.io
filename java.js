@@ -23,16 +23,6 @@ overlay.addEventListener('click', function(e) {
   }
 });
 
-// document.querySelectorAll('.grid-projets').forEach(img => {
-//   img.addEventListener('click', function() {
-//     this.classList.toggle('fullscreen-image');
-//   });
-// });
-
-
-// const galleryImages = document.querySelectorAll('.grid-projets');
-// const overlay = document.getElementById('overlay');
-// const fullscreenImage = document.getElementById('fullscreen-image');
 const closeBtn = document.querySelector('.close-btn');
 const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
@@ -72,3 +62,24 @@ overlay.addEventListener('click', function(e) {
   }
 });
 
+//////
+// Écoute les touches du clavier
+window.addEventListener('keydown', function(e) {
+  // Si l'overlay est affiché
+  if (overlay.style.display === 'flex') {
+    // Flèche gauche : image précédente
+    if (e.key === 'ArrowLeft') {
+      currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+      fullscreenImage.src = galleryImages[currentIndex].src;
+    }
+    // Flèche droite : image suivante
+    else if (e.key === 'ArrowRight') {
+      currentIndex = (currentIndex + 1) % galleryImages.length;
+      fullscreenImage.src = galleryImages[currentIndex].src;
+    }
+    // Échap : ferme l'overlay
+    else if (e.key === 'Escape') {
+      overlay.style.display = 'none';
+    }
+  }
+});
