@@ -83,3 +83,68 @@ window.addEventListener('keydown', function(e) {
     }
   }
 });
+
+
+    document.getElementById('back-to-top').addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    window.addEventListener('scroll', function() {
+        const backToTop = document.getElementById('back-to-top');
+        if (window.pageYOffset > 300) {
+            backToTop.style.display = 'block';
+        } else {
+            backToTop.style.display = 'none';
+        }
+    });
+
+    // const backToTop = document.getElementById('back-to-top');
+
+    // // Afficher/masquer la flèche selon la position de défilement
+    // window.addEventListener('scroll', function() {
+    //     if (window.pageYOffset > 300) {
+    //         backToTop.style.display = 'block';
+    //     } else {
+    //         backToTop.style.display = 'none';
+    //     }
+    // });
+
+    // // Remonter en haut et masquer la flèche
+    // backToTop.addEventListener('click', function(e) {
+    //     e.preventDefault();
+    //     window.scrollTo({
+    //         top: 0,
+    //         behavior: 'smooth'
+    //     });
+    //     // Masquer la flèche une fois en haut
+    //     backToTop.style.display = 'none';
+    // });
+
+
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     const backToTop = document.getElementById('back-to-top');
+
+//     // Afficher/masquer la flèche selon la position de défilement
+//     window.addEventListener('scroll', function() {
+//         if (window.pageYOffset > 10) {
+//             backToTop.style.display = 'block';
+//         } else {
+//             backToTop.style.display = 'none';
+//         }
+//     });
+
+//     // Remonter en haut et masquer la flèche
+//     backToTop.addEventListener('click', function(e) {
+//         e.preventDefault();
+//         window.scrollTo({
+//             top: 0,
+//             behavior: 'smooth'
+//         });
+//         backToTop.style.display = 'none';
+//     });
+// });
