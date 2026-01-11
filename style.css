@@ -282,7 +282,7 @@ a.lien:hover{
     transition: all 0.5S;    
 }
 
-a[href^="mailto:"] {
+/* a[href^="mailto:"] {
     color: white;
     text-decoration: none;
     font-size: 20px;
@@ -297,7 +297,7 @@ a[href^="mailto:"]:hover{
     a[href^="mailto:"] {
         font-size: 24px;
 }
-}
+} */
 
 .mail{
   display: flex;
