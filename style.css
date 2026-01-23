@@ -135,6 +135,7 @@ h1{
 
 h2{
     font-family: "marc-bold";
+    font-weight: normal;
     opacity: 50%;
     /* color: darkcyan; */
 }
