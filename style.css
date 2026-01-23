@@ -461,6 +461,11 @@ a[href^="mailto:"]:hover{
     background-size: cover;
     min-height: 10vh;
 }
+.hindustan-bg{
+    background-image: url('images/hindustan/hindustan-0x.jpg');
+    background-size: cover;
+    min-height: 10vh;
+}
 /* BACKGROUND */
 
 .overlay {
