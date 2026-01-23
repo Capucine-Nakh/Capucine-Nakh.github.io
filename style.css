@@ -466,6 +466,11 @@ a[href^="mailto:"]:hover{
     background-size: cover;
     min-height: 10vh;
 }
+.flow-bg{
+    background-image: url('images/flow/flow-0x.jpg');
+    background-size: cover;
+    min-height: 10vh;
+}
 /* BACKGROUND */
 
 .overlay {
