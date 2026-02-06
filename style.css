@@ -3,6 +3,10 @@
     src: url(woff2/Faune-Text_Regular.woff2);
 }
 @font-face {
+    font-family: "faune-italic";
+    src: url(woff2/Faune-Text_Italic.woff2);
+}
+@font-face {
     font-family: "marc-bold";
     src: url(marc/Marc-Bold.otf);
 }
@@ -138,6 +142,11 @@ h2{
     font-weight: normal;
     opacity: 50%;
     /* color: darkcyan; */
+}
+
+i{
+    font-family: "faune-italic";
+    font-weight: normal;
 }
 
 .fond{
