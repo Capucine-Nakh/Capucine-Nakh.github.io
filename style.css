@@ -235,7 +235,7 @@ i{
 }
 
 .menu{
-    margin-top: 12vh;
+    /* margin-top: 12vh; */
     display: grid;
     grid-template-columns: 1fr auto auto auto;
     gap: 10px;
@@ -286,7 +286,7 @@ i{
 
 @media (min-width:768px){
     .menu{
-        margin-top: 22vh;
+        /* margin-top: 22vh; */
         font-size: 17px;
     }
     .menu2{
@@ -296,7 +296,7 @@ i{
 
 @media (min-width:1024px){
     .menu{
-        margin-top: 37vh;
+        /* margin-top: 37vh; */
         font-size: 20px;
     }
     .menu2{
@@ -306,8 +306,8 @@ i{
 
 @media (min-width:1480px){
     .menu{
-        font-size: 23px;
-        margin-top: 54vh;}
+        /* margin-top: 54vh; */
+        font-size: 23px;}
 }        
 
 .texte{
